@@ -27,10 +27,14 @@ token.
    ```
    Replace placeholders with your actual information.
    ```env
-   MNEMONICS=your_mnemonic_seed_phrase
-   RECIPIENT_ADDRESS=your_recipient_address
-   GPUS_COUNT=number_of_gpus
-   TIMEOUT=timeout_duration_in_seconds
+   MNEMONICS=a b c
+   RECIPIENT_ADDRESS=UQ...
+   GPUS_COUNT=8
+
+   TIMEOUT=5
+   ITERATIONS=999999999999999
+   GIVERS_COUNT=1000
+   BOOST_FACTOR=128
    ```
 
 ## Usage

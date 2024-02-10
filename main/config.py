@@ -16,7 +16,11 @@ class Config:
     mnemonics: str
     recipient_address: str
     gpus_count: int
+
     timeout: int
+    iterations: int
+    givers_count: int
+    boost_factor: int
 
     @classmethod
     def init(cls) -> Config:
@@ -34,5 +38,9 @@ class Config:
             mnemonics=env.str("MNEMONICS"),
             recipient_address=env.str("RECIPIENT_ADDRESS"),
             gpus_count=env.int("GPUS_COUNT"),
+
             timeout=env.int("TIMEOUT"),
+            iterations=env.int("ITERATIONS"),
+            givers_count=env.int("GIVERS_COUNT"),
+            boost_factor=env.int("BOOST_FACTOR"),
         )
